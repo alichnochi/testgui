@@ -1,35 +1,35 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Arix Hub",
-   LoadingTitle = "Link Starting",
-   LoadingSubtitle = "by Arix",
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "Arix Hub"
-   },
-   Discord = { -- https://discord.gg/cG5qxcAZb6
-      Enabled = true,
-      Invite = "cG5qxcAZb6", -- The Discord invite code, do not include discord.gg/
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
-   },
-   KeySystem = false, -- Set this to true to use our key system
-   KeySettings = {
-      Title = "Arix Hub",
-      Subtitle = "Key System",
-      Note = "Join the discord (discord.gg/cG5qxcAZb6)",
-      FileName = "SiriusKey",
-      SaveKey = true,
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "Hello"
-   }
-})
-
+    Name = "Arix Hub",
+    LoadingTitle = "Arix Interface Suite",
+    LoadingSubtitle = "by Arix",
+    ConfigurationSaving = {
+       Enabled = true,
+       FolderName = nil, -- Create a custom folder for your hub/game
+       FileName = "Arrayfield"
+    },
+    Discord = {
+       Enabled = false,
+       Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+    },
+    KeySystem = false, -- Set this to true to use our key system
+    KeySettings = {
+       Title = "Arrayfield",
+       Subtitle = "Key System",
+       Note = "Join the discord (discord.gg/sirius)",
+       FileName = "SiriusKey",
+       SaveKey = false,
+       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+       Key = "Hello"
+    }
+ })
 local Tab = Window:CreateTab("Tab Example", 4483362458)
 
 local Section = Tab:CreateSection("Section Example")
 
+--[[
 Rayfield:Notify({
    Title = "Notification Title",
    Content = "Notification Content",
@@ -44,6 +44,7 @@ Rayfield:Notify({
    },
 },
 })
+]]
 
 local Button = Tab:CreateButton({
    Name = "Button Example",
