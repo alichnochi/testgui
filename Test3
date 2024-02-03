@@ -2,7 +2,7 @@ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-I
 
 local Window = Rayfield:CreateWindow({
    Name = "Arix Hub | Progressive",
-   LoadingTitle = "Starting Script Progressive",
+   LoadingTitle = "Starting Arix Hub Progressive",
    LoadingSubtitle = "by Figger_999",
    ConfigurationSaving = {
       Enabled = true,
@@ -28,7 +28,7 @@ local Window = Rayfield:CreateWindow({
 local New_Function_T = Window:CreateTab("New Function", 4483362458) -- Title, Image
 local General_T = Window:CreateTab("General") -- Title, Image
 -- Auto Farm Fox Lamp
-New_Function_T:CreateSection("🪄 : Fox Lamp",true)
+New_Function_T:CreateSection("🦯 : Fox Lamp",true)
 local Fox_Lamp_C = New_Function_T:CreateToggle({
    Name = "Auto Farm Fox Lamp",
    Info = "...",
