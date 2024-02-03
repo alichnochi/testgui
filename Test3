@@ -1,8 +1,9 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/UI-Interface/CustomFIeld/main/RayField.lua'))()
+
 local Window = Rayfield:CreateWindow({
    Name = "Arix Hub | Progressive",
-   LoadingTitle = "Arix Interface Suite",
-   LoadingSubtitle = "by Arrays",
+   LoadingTitle = "Starting Script Progressive",
+   LoadingSubtitle = "by Figger_999",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -26,8 +27,8 @@ local Window = Rayfield:CreateWindow({
 })
 local New_Function_T = Window:CreateTab("New Function", 4483362458) -- Title, Image
 local General_T = Window:CreateTab("General") -- Title, Image
-local Section = New_Function_T:CreateSection("Section Example",true) -- The 2nd argument is to tell if its only a Title and doesnt contain element
 -- Auto Farm Fox Lamp
+New_Function_T:CreateSection("🪄 : Fox Lamp",true)
 local Fox_Lamp_C = New_Function_T:CreateToggle({
    Name = "Auto Farm Fox Lamp",
    Info = "...",
@@ -37,6 +38,7 @@ local Fox_Lamp_C = New_Function_T:CreateToggle({
    end
 })
 -- Auto Farm Shark Anchor
+New_Function_T:CreateSection("⚓ : Shark Anchor",true)
 local Shark_Anchor_C = New_Function_T:CreateToggle({
    Name = "Auto Farm Shark Anchor",
    Info = "...",
@@ -46,6 +48,7 @@ local Shark_Anchor_C = New_Function_T:CreateToggle({
    end
 })
 -- Auto Fruit Sniper
+New_Function_T:CreateSection("🍎 : Devil Fruit",true)
 local Auto_Fruit_Sniper_C = New_Function_T:CreateToggle({
    Name = "Auto Fruit Sniper",
    Info = "...",
