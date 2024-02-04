@@ -25,11 +25,10 @@ local Window = Rayfield:CreateWindow({
       Key = "Hello"
    }
 })
-local New_Function_T = Window:CreateTab("New Function", 4483362458) -- Title, Image
-local General_T = Window:CreateTab("General") -- Title, Image
+local General_T = Window:CreateTab("General", 4483362458) -- Title, Image
 -- Auto Farm Fox Lamp
-New_Function_T:CreateSection("🦯 : Fox Lamp",true)
-local Fox_Lamp_C = New_Function_T:CreateToggle({
+General_T:CreateSection("🦯 : Fox Lamp",true)
+local Fox_Lamp_C = General_T:CreateToggle({
    Name = "Auto Farm Fox Lamp",
    Info = "...",
    CurrentValue = false,
@@ -38,8 +37,8 @@ local Fox_Lamp_C = New_Function_T:CreateToggle({
    end
 })
 -- Auto Farm Shark Anchor
-New_Function_T:CreateSection("⚓ : Shark Anchor",true)
-local Shark_Anchor_C = New_Function_T:CreateToggle({
+General_T:CreateSection("⚓ : Shark Anchor",true)
+local Shark_Anchor_C = General_T:CreateToggle({
    Name = "Auto Farm Shark Anchor",
    Info = "...",
    CurrentValue = false,
@@ -48,8 +47,8 @@ local Shark_Anchor_C = New_Function_T:CreateToggle({
    end
 })
 -- Auto Fruit Sniper
-New_Function_T:CreateSection("🍎 : Devil Fruit",true)
-local Auto_Fruit_Sniper_C = New_Function_T:CreateToggle({
+General_T:CreateSection("🍎 : Devil Fruit",true)
+local Auto_Fruit_Sniper_C = General_T:CreateToggle({
    Name = "Auto Fruit Sniper",
    Info = "...",
    CurrentValue = false,
@@ -57,11 +56,28 @@ local Auto_Fruit_Sniper_C = New_Function_T:CreateToggle({
       Auto_Fruit_Sniper = Value
    end
 })
-local Fox_C = New_Function_T:CreateToggle({
+General_T:CreateDropdown({
+   Name = "Select Fruit",
+   Options = {"Kitsune-Kitsune","Mammoth-Mammoth",'Dragon-Dragon'},
+   CurrentOption = {"Kitsune-Kitsune","Mammoth-Mammoth"} ,
+   MultiSelection = true,
+   Callback = function(Option)
+      Select_Fruit = Option
+   end,
+})
+General_T:CreateToggle({
+   Name = "Auto Check Mirage Island",
+   Info = "...",
+   CurrentValue = false,
+   Callback = function(Value)
+      Auto_Check_Mirage_Island = Value
+   end
+})
+General_T:CreateToggle({
    Name = "Auto Bring Fruit",
    Info = "...",
    CurrentValue = false,
    Callback = function(Value)
-      Auto_Farm_Fox_Lamp = Value
+      Auto_Bring_Fruit = Value
    end
 })
