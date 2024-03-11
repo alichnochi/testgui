@@ -6726,7 +6726,7 @@ function library:CreateWindow(options, ...)
         }}, {"AddColorpicker", "__Designer.Colorpicker.ImageColor", backgroundsection, {
             Name = "Image Color",
             Flag = "__Designer.Background.ImageColor",
-            Value = Color3.fromHex('00D611'), --  
+            Value = Color3.fromHex('CF49FF'), --  
             Callback = updatecolorsnotween,
             __designer = 1
         }}, {"AddSlider", "__Designer.Slider.ImageTransparency", backgroundsection, {
